@@ -197,3 +197,4 @@ nohup_out/
 results/
 figures/
 lightning_logs/
+data/
