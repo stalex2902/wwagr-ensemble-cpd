@@ -1,0 +1,45 @@
+model:
+  c_in: 28
+  nb_filters: 64
+  kernel_size: 5
+  nb_stacks: 2
+  dilations: [1, 2, 4, 8]
+  use_skip_connections: True
+  use_batch_norm: False
+  use_layer_norm: False
+  use_weight_norm: False
+  dropout_rate: 0.
+  seq_len: 4
+  n_steps: 8
+  code_size: 4
+  window: 4
+  window_1: 4
+  window_2: 4
+  
+learning:
+  batch_size: 8
+  lr: 0.001
+  epochs: 200
+  decay_steps: 1000
+  grad_clip: 0.
+
+loss:
+  temperature: 0.1
+
+predictions:
+  step: 1
+  alpha: 1.
+
+early_stopping:
+  monitor: train_loss_epoch
+  min_delta: 0.0001
+  patience: 5
+
+distance:
+  window_size_list: [1, 2, 3]
+  anchor_window_type_list: ["start", "prev"]
+
+evaluation:
+  margin_list: [1, 2, 4]
+
+model_type: tscp

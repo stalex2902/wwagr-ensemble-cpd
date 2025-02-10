@@ -1,0 +1,41 @@
+model:
+  c_in: 1
+  input_dim: 1
+  output_dim: 32
+  hidden_dim: 128
+  depth: 8
+  spec_norm: True
+  window: 75
+  window_1: 75
+  window_2: 75
+  max_train_length: null
+  
+learning:
+  batch_size: 128
+  lr: 0.001
+  epochs: 40
+  grad_clip: 0.
+  weight_decay: 0.2
+
+loss:
+  temporal_unit: 0
+
+num_workers: 2
+
+predictions:
+  step: 10
+  alpha: 0.1
+
+early_stopping:
+  monitor: val_loss
+  min_delta: 0
+  patience: 40
+
+distance:
+  window_size_list: [3, 5, 10]
+  anchor_window_type_list: ["start", "prev"]
+
+evaluation:
+  margin_list: [50, 100, 200]
+
+model_type: ts2vec

@@ -1,0 +1,31 @@
+model:
+  input_size: 12288
+  hidden_rnn: 64
+  rnn_n_layers: 1
+  rnn_dropout: 0.5
+  dropout: 0.5
+  layer_norm: True
+  ln_type: before
+
+learning:
+  batch_size: 16
+  lr: 0.001
+  epochs: 100
+  grad_clip: 0.0
+
+loss:
+  T: 8
+
+early_stopping:
+  monitor: "val_loss"
+  min_delta: 0
+  patience: 10
+
+distance:
+  window_size_list: [1, 2, 3]
+  anchor_window_type_list: ["start", "prev"]
+
+evaluation:
+  margin_list: [1, 2, 4]
+
+model_type: seq2seq

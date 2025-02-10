@@ -1,0 +1,29 @@
+model:
+  hidden_dim: 8
+  input_size: 28
+  n_layers: 1
+  drop_prob: 0.5
+  layer_norm: False
+
+learning:
+  batch_size: 64
+  lr: 0.001
+  epochs: 200
+  grad_clip: 0.0
+
+loss:
+  T: 5
+
+early_stopping:
+  monitor: "val_loss"
+  min_delta: 0
+  patience: 10
+
+distance:
+  window_size_list: [1, 2, 3]
+  anchor_window_type_list: ["start", "prev"]
+
+evaluation:
+  margin_list: [1, 2, 4]
+
+model_type: seq2seq
