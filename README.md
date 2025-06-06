@@ -1,6 +1,6 @@
 # WWAggr: A Window Wasserstein-based Aggregation for Ensemble Change Point Detection
 
-Clean code and README are upcoming! Currently, the datasets and the pretrained' models weights cannot be published due to the double anonymity policy.
+Clean code and README are upcoming!
 
 ## Dependancies
 ```pip install -r requirements.txt```
