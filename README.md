@@ -6,10 +6,10 @@ Clean code and README are upcoming!
 ```pip install -r requirements.txt```
 
 ## Datasets
-All the data samples are available [TBA](). Once loaded, put them into the ```/data``` folder.
+All the data samples are available [online](https://limewire.com/d/MYhOk#qwo4dF6h3k). Once loaded, unzip the `data.zip` file to create the ```/data``` folder.
 
 ## Pretrained models
-All the pretrained models for ensembles are available [TBA](). Once loaded, put them into the ```/saved_models``` folder.
+All the pretrained models for ensembles are available [online](https://limewire.com/d/MYhOk#qwo4dF6h3k). Once loaded, unzip the `saved_models.zip` file to create the ```/saved_models``` folder.
 
 ## Experiments
 * ```train_models.py``` - script for training base models for ensembles from scratch
