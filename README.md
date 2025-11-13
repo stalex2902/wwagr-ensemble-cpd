@@ -2,7 +2,7 @@
 
 Clean code and README are upcoming!
 
-## Dependancies
+## Dependencies
 ```pip install -r requirements.txt```
 
 ## Datasets
